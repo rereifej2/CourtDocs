@@ -11,7 +11,7 @@
 <body>
   <main>
     <h1>Please review the following Documents: </h1>
-    <h1>Update 9: </h1>
+    <h1>Update 10: </h1>
     <h1><a href="Document1.pdf">1. First Document</a></h1>
     <h1><a href="Document2.pdf">2. 2nd Document</a></h1>
 
@@ -21,8 +21,8 @@
   <script>
   (async function() {
       const { text } = await( await fetch(`/api/message`)).json();
-      //document.querySelector('#name').textContent = text;
-      document.querySelector('#name').textContent = body;
+      document.querySelector('#name').textContent = text;
+
   }());
   </script>
 
